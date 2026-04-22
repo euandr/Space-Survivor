@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    public GameObject bounceEffectPrefab;
     public float minSize = 0.5f;
     public float maxSize = 2.0f;
     Rigidbody2D rb;
@@ -30,5 +31,14 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
          
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 contactPoint = collision.GetContact(0).point; 
+        GameObject bounceEffect = Instantiate(bounceEffectPrefab, contactPoint, Quaternion.identity);
+
+        // Destroy the effect after 1 second
+        Destroy(bounceEffect, 0.5f);
     }
 }

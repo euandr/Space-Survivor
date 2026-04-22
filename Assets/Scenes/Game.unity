@@ -416,7 +416,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.9638114, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.33914372, b: 0.0047169924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -435,7 +435,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 443e814fb423be44c9098b0a8f3706be, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -587,8 +587,8 @@ Transform:
   m_GameObject: {fileID: 261929334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.55686, y: 1.6956, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.882, y: 1.8766, z: 0}
+  m_LocalScale: {x: 1.071638, y: 1.13962, z: 1.071638}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 193191943}
@@ -769,6 +769,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1347,6 +1351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b15c62dcd9fc445a42d37954180c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  explosionEffect: {fileID: 7429225180152387931, guid: a410d6cf0a17002438cd1f517d4ef4b3, type: 3}
   uiDocument: {fileID: 77030201}
   scoreMultiplier: 10
   boosterFlame: {fileID: 1760260774}
@@ -1365,6 +1370,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1755,6 +1764,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1816,6 +1829,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2053,7 +2070,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.9638114, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.33914372, b: 0.0047169924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2155,6 +2172,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2216,6 +2237,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2352,7 +2377,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.9638114, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.33914372, b: 0.0047169924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2371,7 +2396,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 443e814fb423be44c9098b0a8f3706be, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2490,7 +2515,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.9638114, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.33914372, b: 0.0047169924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2509,7 +2534,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 443e814fb423be44c9098b0a8f3706be, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2738,6 +2763,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2799,6 +2828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357936687}
     m_Modifications:
+    - target: {fileID: -6118701148332381541, guid: bf61264eedf204f44831d38556ef8815, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 3108966087932478079, guid: 13f9781e6fc2c984794513c99d553e0c, type: 3}
     - target: {fileID: 1589998173566036443, guid: bf61264eedf204f44831d38556ef8815, type: 3}
       propertyPath: m_Enabled
       value: 1
