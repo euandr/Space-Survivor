@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    // public Sprite[] sprites;
+    // private SpriteRenderer sr;
+    public float maxVelocity = 20f;
     public GameObject bounceEffectPrefab;
     public float minSize = 0.5f;
     public float maxSize = 2.0f;
@@ -13,6 +16,9 @@ public class Obstacle : MonoBehaviour
     void Start()
     {
         
+        // Sprite[] sprites = Resources.LoadAll<Sprite>("asteroids");
+        // sr = GetComponent<SpriteRenderer>();
+        // sr.sprite = sprites[Random.Range(0, sprites.Length)];
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -31,6 +37,12 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
          
+    }
+    void FixedUpdate() {
+        if (rb.linearVelocity.magnitude > maxVelocity)
+        {
+            rb.linearVelocity = rb.linearVelocity.normalized * maxVelocity;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
