@@ -24,7 +24,7 @@ Acesse a Release do projeto para baixar e seguir as instruções de execução:
 O jogo deve ser executado através de um servidor local
 Não é possível abrir o index.html diretamente
 ### 🛠️ Tecnologias utilizadas
-Unity (WebGL)
-C#
+- Unity (WebGL)
+- C#
 
 
